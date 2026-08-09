@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse Delight Afriq collections including bespoke occasion wear, ready-to-wear, accessories, and premium African fashion pieces."
+    />
+    <title>Collections | Delight Afriq</title>
+    <link rel="icon" type="image/jpeg" href="delight%20logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="collections">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="announcement-bar">
+          <p>Browse curated collections for women and men ready-to-wear and send product or custom style inquiries directly on WhatsApp.</p>
+        </div>
+
+        <nav class="navbar container">
+          <a class="brand" href="index.html" aria-label="Delight Afriq home">
+            <img src="assets/delight-logo.jpeg" alt="Delight Afriq logo" class="brand__logo" />
+            <span class="brand__text">
+              <strong>Delight Afriq</strong>
+              <small>Clothing Enterprises</small>
+            </span>
+          </a>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-menu" id="navMenu">
+            <a href="index.html" data-nav="home">Home</a>
+            <div class="nav-links">
+              <a href="collections.html" class="nav-link">Collections</a>
+              <a href="about.html" class="nav-link">About</a>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="https://www.instagram.com/delight_afriq/" target="_blank" rel="noreferrer" class="nav-instagram" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/2348030613742?text=Hello%20Delight%20Afriq%2C%20I%20would%20like%20to%20make%20an%20inquiry." class="btn btn--nav" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero container">
+          <div class="page-hero__content reveal">
+            <span class="eyebrow">Our Collections</span>
+            <h1>Explore Our Premium Fashion</h1>
+            <p>
+              Browse our curated selection of bespoke fashion, ready-to-wear pieces, and statement accessories designed for elegance and distinction.
+            </p>
+          </div>
+        </section>
+
+        <section class="section container">
+          <div class="filters reveal" id="filterButtons"></div>
+          <div class="product-grid" id="productGrid"></div>
+        </section>
+
+        <section class="section container">
+          <div class="craft__grid">
+            <div class="craft__panel craft__panel--story reveal">
+              <span class="eyebrow">Ordering</span>
+              <h2>Ready to Order?</h2>
+              <p>
+                Connect with us directly through WhatsApp to inquire about pricing, availability, sizes, and custom modifications.
+              </p>
+              <ul>
+                <li>Ask about a featured style</li>
+                <li>Request a made-to-measure version</li>
+                <li>Send inspiration references</li>
+                <li>Confirm availability and next steps</li>
+              </ul>
+            </div>
+
+            <div class="craft__panel craft__panel--benefits reveal">
+              <div class="benefit-box">
+                <strong>Collections</strong>
+                <h3>Occasion Wear</h3>
+                <p>Wedding guest, celebration, and event-ready fashion.</p>
+              </div>
+              <div class="benefit-box">
+                <strong>Collections</strong>
+                <h3>Ready-to-Wear</h3>
+                <p>Polished styles for everyday confidence and social outings.</p>
+              </div>
+              <div class="benefit-box">
+                <strong>Collections</strong>
+                <h3>Accessories</h3>
+                <p>Statement shoes and bags to complete the full Delight Afriq look.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer__layout">
+          <div class="footer__brand">
+            <a class="brand brand--footer" href="index.html">
+              <img src="delight%20logo.jpeg" alt="Delight Afriq logo" class="brand__logo" />
+              <span class="brand__text">
+                <strong>Delight Afriq</strong>
+                <small>Clothing Enterprises</small>
+              </span>
+            </a>
+            <p class="footer__copy">
+              Premium African fashion for bespoke, ready-to-wear, and statement styles.
+            </p>
+          </div>
+
+          <div class="footer__actions">
+            <a href="https://www.instagram.com/delight_afriq/" target="_blank" rel="noreferrer" aria-label="Follow on Instagram" class="footer-instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+              </svg>
+            </a>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top" aria-label="Back to top">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-8 8h6v8h4v-8h6z" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="container footer__bottom">
+          <p>© 2026 Delight Afriq. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <a
+        class="whatsapp-float"
+        href="https://wa.me/2348030613742?text=Hello%20Delight%20Afriq%2C%20I%20am%20interested%20in%20your%20fashion%20services."
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat with Delight Afriq on WhatsApp"
+      >
+        WhatsApp
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
