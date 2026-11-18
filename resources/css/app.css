@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+
+    --color-navy-950: #0C1A3A;
+    --color-navy-900: #122453;
+    --color-navy-800: #1B3268;
+    --color-gold-500: #C9A227;
+    --color-gold-400: #DBB84A;
+    --color-gold-100: #F5EBCD;
+    --color-ink: #0A1226;
+    --color-body: #4A5568;
+    --color-cream: #F8F7F4;
+    --color-line: #E7E2D8;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-white text-body font-sans antialiased;
+    }
+
+    h1, h2, h3 {
+        @apply font-display text-ink;
+    }
+
+    :focus-visible {
+        @apply outline-2 outline-offset-2 outline-gold-500;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+@layer components {
+    .da-container {
+        @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+    }
+
+    .da-eyebrow {
+        @apply text-xs font-semibold uppercase tracking-[0.28em] text-gold-500;
+    }
+
+    .da-section {
+        @apply py-16 sm:py-24;
+    }
+
+    .da-heading {
+        @apply font-display text-3xl leading-tight text-ink sm:text-4xl;
+    }
+
+    .da-btn-primary {
+        @apply inline-flex items-center justify-center gap-2 bg-navy-950 px-6 py-3 text-sm font-semibold tracking-wide text-white transition hover:bg-navy-800;
+    }
+
+    .da-btn-gold {
+        @apply inline-flex items-center justify-center gap-2 bg-gold-500 px-6 py-3 text-sm font-semibold tracking-wide text-navy-950 transition hover:bg-gold-400;
+    }
+
+    .da-btn-outline {
+        @apply inline-flex items-center justify-center gap-2 border border-navy-950 px-6 py-3 text-sm font-semibold tracking-wide text-navy-950 transition hover:bg-navy-950 hover:text-white;
+    }
+
+    .da-card {
+        @apply border border-line bg-white;
+    }
+
+    .da-input {
+        @apply w-full border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-body/60 focus:border-gold-500 focus:outline-none;
+    }
+
+    .da-label {
+        @apply mb-2 block text-xs font-semibold uppercase tracking-widest text-ink;
+    }
+}
